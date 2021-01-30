@@ -1,12 +1,15 @@
 <template>
     <div>
-    <h1>Test Text</h1>        
+        <div v-bind:key="image.id" v-for="image in images">
+            <img v-bind:src="image.address">
+        </div>       
     </div>    
 </template>
 
 <script>
 export default {
-    name: "ImageCards"
+    name: "ImageCards",
+    props: ["images"]
 }
 </script>
 

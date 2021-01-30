@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <ImageCards/>
+    <ImageCards v-bind:images="images"/>
 
   </div>
 </template>
@@ -18,10 +18,10 @@ export default {
   },
   data() {
     return {
-      art: [
-
-      // put art objects here 
-
+      images: [ // put art objects here
+        {id: 1, address: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Photos_icon_%282020%29.svg/128px-Google_Photos_icon_%282020%29.svg.png"},
+        {id: 2, address: "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"}, 
+        {id: 3, address: "http://sensorbot.org/img/sensorbot_logo_horiz_light.svg"}
       ]
     }
 
@@ -35,7 +35,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #d7dde4;
   margin-top: 60px;
+  background: #2c3e50;
 }
 </style>
