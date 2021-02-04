@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>{{image.id}}</p>
+        <p>{{image.title}}</p>
         <img v-bind:src="image.address">
     </div>
 </template>
