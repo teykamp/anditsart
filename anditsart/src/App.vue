@@ -1,4 +1,6 @@
+
 <template>
+<!-- to start use "vue ui" -->
   <div id="app">
 
     <ImageCards v-bind:images="images"/>
