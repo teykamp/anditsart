@@ -1,13 +1,9 @@
 <template>
     <div>
-        <div v-bind:key="image.id" v-for="image in images">
-            <b-container fluid class="format">
-                <b-row align-v="center">
-                    <b-col>
-                        <ImageItem v-bind:image="image"/>
-                    </b-col>
-                </b-row>
-            </b-container>
+        <div class="test" v-bind:key="image.id" v-for="image in images">
+            <b-col align-v="center" align-h="center">
+                <ImageItem v-bind:image="image"/>
+            </b-col>
         </div>
     </div>    
 </template>
@@ -25,6 +21,9 @@ export default {
 </script>
 
 <style scoped>
-    
+.test{
+    background: #000;
+
+}
 
 </style>

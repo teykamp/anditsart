@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img v-bind:src="image.address" class="img-fluid" alt="Responsive image">
+        <img v-bind:src="image.address" class="image" alt="Responsive image">
         <p>{{image.title}}</p>
     </div>
 </template>
@@ -13,5 +13,9 @@ export default {
 </script>
 
 <style scoped>
-
+.image {
+    padding: 50px;
+    border-radius: 50px;
+    background: #fff;
+}
 </style>
