@@ -1,7 +1,7 @@
 <template>
     <div>
+        <img v-bind:src="image.address" class="img-fluid" alt="Responsive image">
         <p>{{image.title}}</p>
-        <img v-bind:src="image.address">
     </div>
 </template>
 

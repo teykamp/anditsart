@@ -3,7 +3,14 @@
 <!-- to start use "vue ui" -->
   <div id="app">
 
-    <ImageCards v-bind:images="images"/>
+
+    <b-container fluid class="format">
+      <b-row align-v="center">
+        <b-col>
+          <ImageCards v-bind:images="images"/>
+        </b-col>
+      </b-row>
+    </b-container>
 
   </div>
 </template>
@@ -39,6 +46,9 @@ export default {
   text-align: center;
   color: #d7dde4;
   margin-top: 60px;
+  background: #2c3e50;
+}
+.format {
   background: #2c3e50;
 }
 </style>
