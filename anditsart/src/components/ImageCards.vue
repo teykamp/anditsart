@@ -1,10 +1,12 @@
 <template>
     <div>
-        <div class="test" v-bind:key="image.id" v-for="image in images">
+        <b-row align-v="center" align-h="center">
+        <div class="imcard" v-bind:key="image.id" v-for="image in images">
             <b-col align-v="center" align-h="center">
                 <ImageItem v-bind:image="image"/>
             </b-col>
         </div>
+        </b-row>
     </div>    
 </template>
 
@@ -21,8 +23,9 @@ export default {
 </script>
 
 <style scoped>
-.test{
-    background: #000;
+.imcard{
+    /* background: #000; */
+    padding: 60px;
 
 }
 

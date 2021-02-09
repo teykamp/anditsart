@@ -2,10 +2,8 @@
 <template>
 <!-- to start use "vue ui" -->
   <div id="app">
-    <b-container fluid class="format">
-      <b-row align-v="center" align-h="center">
-          <ImageCards v-bind:images="images"/>
-      </b-row>
+    <b-container fluid classs="format">
+      <ImageCards v-bind:images="images"/>
     </b-container>
   </div>
 </template>
