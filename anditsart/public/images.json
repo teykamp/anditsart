@@ -1,15 +1,47 @@
 [
     {   "id": 1,
         "title": "google",
-        "address": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Photos_icon_%282020%29.svg/128px-Google_Photos_icon_%282020%29.svg.png"
+        "address": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1004px-Google_%22G%22_Logo.svg.png"
     },
 
     {   "id": 2,
         "title": "microsoft",
-        "address": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+        "address": "/images/logo.png"
     },
 
     {   "id": 3,
+        "title": "sensorbot",
+        "address": "http://sensorbot.org/img/sensorbot_logo_horiz_light.svg"
+    },
+
+    {
+        "id": 4,
+        "title": "google",
+        "address": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Photos_icon_%282020%29.svg/128px-Google_Photos_icon_%282020%29.svg.png"
+    },
+    {
+        "id": 5,
+        "title": "microsoft",
+        "address": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+    },
+    {
+        "id": 6,
+        "title": "sensorbot",
+        "address": "/images/logo.png"
+    },
+
+    {
+        "id": 7,
+        "title": "google",
+        "address": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Photos_icon_%282020%29.svg/128px-Google_Photos_icon_%282020%29.svg.png"
+    },
+    {
+        "id": 8,
+        "title": "microsoft",
+        "address": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+    },
+    {
+        "id": 9,
         "title": "sensorbot",
         "address": "http://sensorbot.org/img/sensorbot_logo_horiz_light.svg"
     }

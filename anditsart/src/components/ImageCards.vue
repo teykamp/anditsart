@@ -24,9 +24,7 @@ export default {
 
 <style scoped>
 .imcard{
-    /* background: #000; */
     padding: 60px;
-
 }
 
 </style>
