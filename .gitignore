@@ -351,5 +351,5 @@ MigrationBackup/
 
 
 # ###############################################
-# images json
-images.json
+# images
+anditsart/public/images/*
