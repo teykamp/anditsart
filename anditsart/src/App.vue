@@ -105,6 +105,7 @@ export default {
   text-align: center;
   color: #d7dde4;
   background: #2c3e50;
+  padding-bottom: 50px;
 }
 .format {
   background: #2c3e50;
@@ -116,16 +117,26 @@ export default {
   padding: 5px;
   height: 50px;
   width: 50px;
+  box-shadow: black;
+
 }
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
+
+
 .toTop {
   border: none;
   padding: 10px;
   background: none;
+  transition-duration: 100ms;
 }
+
+.toTop:hover {
+  transform: translateY(10px);
+}
+
 .searchIcon {
   width: 30px;
   height: 30px;
