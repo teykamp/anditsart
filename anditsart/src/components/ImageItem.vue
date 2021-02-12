@@ -2,6 +2,7 @@
     <div>        
         <img class="image" v-bind:src="image.address">
         <p>{{image.title}}</p>
+        <p>by {{image.author}}</p>
     </div>
 </template>
 

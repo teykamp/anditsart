@@ -5,6 +5,7 @@
     <b-container fluid classs="format">
       <ImageCards v-bind:images="images"/>
     </b-container>
+    <button class="toTop" @click="scrollToTop()"><i class="arrow up"></i></button>
   </div>
 </template>
 
@@ -31,6 +32,10 @@ export default {
       } catch {
         console.error("Cannot Fetch JSON Data");
       }
+    },
+
+    scrollToTop() {
+      window.scrollTo(0,0);
     }
   },
   data() {
@@ -54,4 +59,22 @@ export default {
 .format {
   background: #2c3e50;
 }
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  height: 50px;
+  width: 50px;
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.toTop {
+  background: none;
+  border: none;
+  padding: 10px;
+}
+
 </style>
