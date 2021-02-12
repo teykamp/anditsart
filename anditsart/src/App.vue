@@ -19,8 +19,9 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-nav-form>
-              <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-              <b-button size="sm" class="searchbtn" type="submit">Go!</b-button>
+              <img class=searchIco src=https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png>
+              <b-form-input size="sm" class="mr-sm-2" v-model="search" placeholder="Search"></b-form-input>
+              <!-- <b-button size="sm" class="searchbtn" type="submit">Go!</b-button> -->
             </b-nav-form>
           </b-navbar-nav>
         </b-collapse>
@@ -30,7 +31,7 @@
     <!-- end nav -->
     <!-- start images -->
     <b-container fluid classs="format">
-      <ImageCards v-bind:images="images"/>
+      <ImageCards v-bind:images="filteredImg"/>
     </b-container>
     <button class="toTop" @click="scrollToTop()">
       <i class="arrow up">
@@ -47,7 +48,7 @@ import ImageCards from './components/ImageCards'
 export default {
   name: 'App',
   components: {
-  ImageCards
+    ImageCards
   },
   mounted(){
       this.fetchData();
@@ -70,8 +71,17 @@ export default {
   },
   data() {
     return {
-      images: [] // imports from ./public/images.json
+      images: [], // imports from ./public/images.json
+      search: ""
     }
+  },
+  computed: {
+    filteredImg: function() {
+      return this.images.filter((image) => {
+        return image.author.match(this.search) || image.title.match(this.search);
+      });
+    }
+
   }
 }
 </script>
@@ -105,9 +115,10 @@ export default {
   padding: 10px;
   background: none;
 }
-.searchbtn {
-  background: #2c3e50;
-
+.searchIco {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
 }
 
 </style>

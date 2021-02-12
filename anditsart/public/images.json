@@ -12,13 +12,13 @@
     {   "id": 3,
         "title": "sensorbot",
         "address": "http://sensorbot.org/img/sensorbot_logo_horiz_light.svg",
-        "author": "unknown"
+        "author": "you"
     },
     {
         "id": 4,
         "title": "google",
         "address": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Photos_icon_%282020%29.svg/128px-Google_Photos_icon_%282020%29.svg.png",
-        "author": "unknown"
+        "author": "me"
     },
     {
         "id": 5,
