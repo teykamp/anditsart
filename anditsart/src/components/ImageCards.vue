@@ -3,7 +3,7 @@
         <b-row align-v="center" align-h="center">
         <div class="imcard" v-bind:key="image.id" v-for="image in images">
             <b-col align-v="center" align-h="center">
-                <button @click="openImage(image.address)">
+                <button class="imgbutton" @click="openImage(image.address)">
                 <ImageItem v-bind:image="image"/>
                 </button>
             </b-col>
@@ -32,6 +32,11 @@ export default {
 <style scoped>
 .imcard{
     padding: 60px;
+}
+.imgbutton {
+    padding: 0;
+    bottom: 50px;
+    border: none;
 }
 
 </style>
