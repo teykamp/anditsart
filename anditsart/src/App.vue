@@ -6,7 +6,7 @@
     <div>
       <!-- left aligned nav items -->
       <b-navbar toggleable="lg" type="dark" variant="dark">
-        <b-navbar-brand class="anditsart">anditsart</b-navbar-brand>
+        <b-navbar-brand><div class="anditsart">anditsart</div></b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -136,4 +136,10 @@ export default {
   transform: scale(1.5);
 }
 
+.anditsart {
+  transition-duration: 200ms;
+}
+.anditsart:hover {
+  color: rgb(79, 209, 137);
+}
 </style>
