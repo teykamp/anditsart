@@ -35,11 +35,19 @@
     <b-container fluid classs="format">
       <ImageCards v-bind:images="filteredImg"/>
     </b-container>
+    <!-- end images -->
     <div v-if="scrollTopUpdater">
       <button class="toTop" @click="scrollToTop()">
         <i class="arrow up"></i>
       </button>
     </div>
+
+    <!-- bottom above footer -->
+    <div v-if="noResultsUpdater">
+      <p></p>
+      <p  class="noResults">No Results Found!</p>
+    </div>
+    <!-- footer here -->
   </div>
 </template>
 
@@ -85,12 +93,16 @@ export default {
     // search
     filteredImg: function() {
       return this.images.filter((image) => {
-        return image.author.match(this.search) || image.title.match(this.search);
+        return image.author.match(this.search) || image.title.match(this.search); // add to this for new parameters (very bad way but works)
       });
     },
 
-    scrollTopUpdater: function() {
+    scrollTopUpdater: function() { // TODO: add passthrough of number to use for other v-if
       return Object.keys(this.filteredImg).length > 6;
+    },
+
+    noResultsUpdater: function() { // empty list?
+      return Object.keys(this.filteredImg).length == 0; // this.filteredImg == []
     }
 
   }
@@ -152,5 +164,11 @@ export default {
 }
 .anditsart:hover {
   color: rgb(79, 209, 137);
+}
+
+.noResults {
+  font-style: oblique;
+  letter-spacing: 2px;
+  padding-top: 20px;
 }
 </style>
