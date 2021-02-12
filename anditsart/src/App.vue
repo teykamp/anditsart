@@ -6,6 +6,9 @@
     <div>
       <!-- left aligned nav items -->
       <b-navbar toggleable="lg" type="dark" variant="dark">
+        <!-- TODO CHANGE IMG -->
+        <img class="logo" src="./assets/logo.png">
+
         <b-navbar-brand><div class="anditsart">anditsart</div></b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -171,6 +174,18 @@ export default {
 }
 .anditsart:hover {
   color: rgb(79, 209, 137);
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  transition-duration: 200ms;
+  opacity: .6;
+}
+
+.logo:hover {
+  opacity: 1;
 }
 
 .noResults {
