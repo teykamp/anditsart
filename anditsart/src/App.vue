@@ -32,7 +32,7 @@
 
     <!-- end nav -->
     <!-- start images -->
-    <b-container fluid classs="format">
+    <b-container fluid class="format">
       <ImageCards v-bind:images="filteredImg"/>
     </b-container>
     <!-- end images -->
@@ -48,6 +48,9 @@
       <p  class="noResults">No Results Found!</p>
     </div>
     <!-- footer here -->
+    <div class="footer">
+      <Footer/>
+    </div>
   </div>
 </template>
 
@@ -55,11 +58,13 @@
 
 // imports
 import ImageCards from './components/ImageCards'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
-    ImageCards
+    ImageCards,
+    Footer
   },
   mounted() {
       this.fetchData();
@@ -98,11 +103,11 @@ export default {
     },
 
     scrollTopUpdater: function() { // TODO: add passthrough of number to use for other v-if
-      return Object.keys(this.filteredImg).length > 6;
+      return this.filteredImg.length > 6;
     },
 
     noResultsUpdater: function() { // empty list?
-      return Object.keys(this.filteredImg).length == 0; // this.filteredImg == []
+      return this.filteredImg.length == 0; 
     }
 
   }
@@ -110,6 +115,7 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -117,7 +123,8 @@ export default {
   text-align: center;
   color: #d7dde4;
   background: #2c3e50;
-  padding-bottom: 50px;
+  min-height: 600px;
+
 }
 .format {
   background: #2c3e50;
@@ -170,5 +177,6 @@ export default {
   font-style: oblique;
   letter-spacing: 2px;
   padding-top: 20px;
+  padding-bottom: 600px;
 }
 </style>
