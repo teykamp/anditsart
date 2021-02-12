@@ -15,8 +15,8 @@ export default {
 <style scoped>
 .image {
     padding: 50px;
-    background: #fff;
-    width: 450px;
-    height: 450px;
+    background: rgb(28, 31, 46);
+    width: 460px;
+    height: 460px;
 }
 </style>

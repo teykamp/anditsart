@@ -3,7 +3,9 @@
         <b-row align-v="center" align-h="center">
         <div class="imcard" v-bind:key="image.id" v-for="image in images">
             <b-col align-v="center" align-h="center">
+                <button @click="openImage(image.address)">
                 <ImageItem v-bind:image="image"/>
+                </button>
             </b-col>
         </div>
         </b-row>
@@ -18,7 +20,12 @@ export default {
     components: {
         ImageItem
     },
-    props: ["images"]
+    props: ["images"],
+    methods: {
+        openImage: function(address) {   
+            window.open(address, "_blank");    
+      }
+    }
 }
 </script>
 
