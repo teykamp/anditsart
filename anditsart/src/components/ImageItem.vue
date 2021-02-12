@@ -20,6 +20,7 @@ export default {
     background: rgb(28, 31, 46);
     width: 460px;
     height: 460px;
+    object-fit: contain;
 }
 .title {
     padding-top: 10px;
