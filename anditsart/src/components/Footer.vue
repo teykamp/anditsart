@@ -44,6 +44,7 @@ export default {
 .right {
     text-align: left;
     margin-left: 50px;
+    color: #0D2636;
 }
 
 .icon {
