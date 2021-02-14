@@ -28,8 +28,6 @@ export default {
     height: 30px;
     width: 30px;
     transform: scale(1.5);
-    box-shadow: drop-shadow(0px 14px 8px 2px rgba(0,0,0,0.76)
-);
 }
 
 .front {
@@ -38,8 +36,7 @@ export default {
     width: 30px;
     opacity: 0;
     transition-duration: 500ms;
-    transition-delay: 100ms;
-    z-index: 5;
+    transition-delay: 500ms;
 }
 .mid {
     position: absolute;
@@ -48,7 +45,6 @@ export default {
     opacity: 0;
     transition-duration: 500ms;
     transition-delay: 250ms;
-    z-index: 2;
 }
 .back {
     position: absolute;
@@ -56,8 +52,7 @@ export default {
     width: 30px;
     opacity: 0;
     transition-duration: 500ms;
-    transition-delay: 500ms;
-    z-index: 1;
+    transition-delay: 100ms;
 }
 
 
@@ -73,5 +68,9 @@ export default {
     opacity: 1;
     transform: scale(1.5);
 }
-
+/*
+5f5fd3ff
+2c2ca0ff
+161650ff
+ */
 </style>

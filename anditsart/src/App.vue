@@ -18,6 +18,8 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
+            <!-- TODO: ARTIST LINKS SORT LIST -->
+            <!-- TODO: SORT LISTBEFORE DISPLAY -->
             <b-nav-item href="https://github.com/">Github</b-nav-item>
             <b-nav-item href="https://twitter.com/">Twitter</b-nav-item>
           </b-navbar-nav>
