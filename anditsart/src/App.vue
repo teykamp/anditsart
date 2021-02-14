@@ -12,7 +12,7 @@
         </div>
         <!-- <img class="logo" src="./assets/logo1.svg"> -->
 
-        <b-navbar-brand><div class="anditsart">anditsart</div></b-navbar-brand>
+        <b-navbar-brand href=""><div class="anditsart">anditsart</div></b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -95,6 +95,12 @@ export default {
     scrollToTop() {
       // scroll button
       window.scrollTo(0,0);
+    },
+
+    navbarArtists(artist) {
+      this.images = this.images.filter((image) => {
+        return image.author.match(artist);
+      });
     }
   },
   data() {

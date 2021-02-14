@@ -37,6 +37,8 @@ export default {
     opacity: 0;
     transition-duration: 500ms;
     transition-delay: 500ms;
+    transform: scale(1.5);
+
 }
 .mid {
     position: absolute;
@@ -45,6 +47,7 @@ export default {
     opacity: 0;
     transition-duration: 500ms;
     transition-delay: 250ms;
+    transform: scale(1.5);
 }
 .back {
     position: absolute;
@@ -52,7 +55,9 @@ export default {
     width: 30px;
     opacity: 0;
     transition-duration: 500ms;
-    transition-delay: 100ms;
+    transition-delay: 100ms;    
+    transform: scale(1.5);
+
 }
 
 
