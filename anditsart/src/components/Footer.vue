@@ -3,7 +3,7 @@
         <b-container fluid class="footer">
             <b-row align-h="center">
                 <b-col class="left" align-h="center">
-                    <img class="logo" src="../assets/logo.png">
+                    <img class="logo" src="../assets/logofooter.svg">
                     <a href="https://github.com/" >
                         <img class="icon" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png">
                     </a>
@@ -32,7 +32,7 @@ export default {
   bottom: 0;
   width: 100%;
   height: 203px;
-  background: red;
+  background: #5f5fd3ff;
   padding-top: 50px;
 }
 
@@ -50,6 +50,10 @@ export default {
     height: 30px;
     width: 30px;
     margin-left: 20px;
-
+}
+.logo {
+    height: 30px;
+    width: 30px;
+    transform: translateY(0);
 }
 </style>

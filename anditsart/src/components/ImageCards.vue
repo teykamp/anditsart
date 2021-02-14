@@ -38,8 +38,7 @@ export default {
     padding: 0;
     bottom: 50px;
     border: none;
-    background: rgba(0, 0, 0, 0.2);
-    color: #fff;
+    color: rgba(8, 8, 8, 0);
 }
 
 </style>

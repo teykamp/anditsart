@@ -5,9 +5,12 @@
 
     <div>
       <!-- left aligned nav items -->
-      <b-navbar toggleable="lg" type="dark" variant="dark">
+      <b-navbar toggleable="lg" type="dark">
         <!-- TODO CHANGE IMG -->
-        <img class="logo" src="./assets/logo.png">
+        <div class="logo">
+          <Logo/>
+        </div>
+        <!-- <img class="logo" src="./assets/logo1.svg"> -->
 
         <b-navbar-brand><div class="anditsart">anditsart</div></b-navbar-brand>
 
@@ -62,12 +65,14 @@
 // imports
 import ImageCards from './components/ImageCards'
 import Footer from './components/Footer'
+import Logo from './components/Logo'
 
 export default {
   name: 'App',
   components: {
     ImageCards,
-    Footer
+    Footer,
+    Logo
   },
   mounted() {
       this.fetchData();
@@ -120,17 +125,23 @@ export default {
 <style>
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #d7dde4;
-  background: #2c3e50;
+  background: #0d1321; /* arrow bg */
   min-height: 600px;
 
 }
+.navbar{
+  border-bottom: 1px solid #5f5fd3ff;
+  background: rgba(0, 0, 0, 0.548);
+}
+
 .format {
-  background: #2c3e50;
+  background: #0d1321
+;
 }
 .arrow {
   border: solid rgb(255, 255, 255);
@@ -173,21 +184,14 @@ export default {
   transition-duration: 200ms;
 }
 .anditsart:hover {
-  color: rgb(79, 209, 137);
+  color: #5f5fd3ff;
+
 }
 
 .logo {
-  height: 30px;
-  width: 30px;
-  margin-right: 10px;
-  transition-duration: 200ms;
-  opacity: .6;
+  margin-right: 50px;
+  transform: translateY(-15px);
 }
-
-.logo:hover {
-  opacity: 1;
-}
-
 .noResults {
   font-style: oblique;
   letter-spacing: 2px;
