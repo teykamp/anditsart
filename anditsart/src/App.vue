@@ -12,7 +12,8 @@
         </div>
         <!-- <img class="logo" src="./assets/logo1.svg"> -->
 
-        <b-navbar-brand href=""><div class="anditsart">anditsart</div></b-navbar-brand>
+        <b-navbar-brand href="#" v-on:click="navbarArtist('');"><div class="anditsart">anditsart</div></b-navbar-brand>
+        <!-- maybe just set search to the right thing -->
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -20,8 +21,8 @@
           <b-navbar-nav>
             <!-- TODO: ARTIST LINKS SORT LIST -->
             <!-- TODO: SORT LISTBEFORE DISPLAY -->
-            <b-nav-item href="https://github.com/">Github</b-nav-item>
-            <b-nav-item href="https://twitter.com/">Twitter</b-nav-item>
+            <b-nav-item href="#" v-on:click="navbarArtist('me');">Artist 1</b-nav-item>
+            <b-nav-item href="#" v-on:click="navbarArtist('unknown');">Artist 2</b-nav-item>
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
@@ -97,10 +98,9 @@ export default {
       window.scrollTo(0,0);
     },
 
-    navbarArtists(artist) {
-      this.images = this.images.filter((image) => {
-        return image.author.match(artist);
-      });
+    navbarArtist: function(artist) {
+      this.search = artist;
+      console.log(artist);
     }
   },
   data() {
